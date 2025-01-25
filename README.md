@@ -20,7 +20,7 @@ Parameters such as API keys and model settings are managed using a dedicated env
 
 ### Creating the OpenAI Assistants
 
-The [script](create-assistant.py) script demonstrates the creation of OpenAI Assistants for the LLMs4Subjects use case. Two different assistants are created:
+The script [create-assistant.py](create-assistant.py) demonstrates the creation of OpenAI Assistants for the LLMs4Subjects use case. Two different assistants are created:
 
 1. GND all-subjects
 2. GND tib-core-subjects
@@ -47,7 +47,7 @@ ID: asst_zMq4YoycnKBDkE6FmXd0eBYV
 
 ### Querying the OpenAI Assistants
 
-The [script](query-assistant.py) script demonstrates how to query an assistant with a user message. For the LLMs4Subjects use case, the relevant assistant ID, along with the title and abstract of an article, is provided to obtain the corresponding GND labels.
+The script [query-assistant.py](query-assistant.py) demonstrates how to query an assistant with a user message using the OpenAI SDK while [query-assistant-api.py](query-assistant-api.py) demonstrates how to query an assistant using the REST API Calls. For the LLMs4Subjects use case, the relevant assistant ID, along with the title and abstract of an article, is provided to obtain the corresponding GND labels.
 
 Example usage for the LLMs4Subjects-all-subjects assistant:
 
