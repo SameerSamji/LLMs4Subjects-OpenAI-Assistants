@@ -7,7 +7,7 @@ The GND (Gemeinsame Normdatei in German or Integrated Authority File in English)
 Task Description:
 For each given technical record (comprising a title and an abstract):
 1. Read and thoroughly comprehend the content.
-2. From the full list of GND subject tags in your knowledge base, identify up to 50 subject tags that are most relevant for indexing the given record.
+2. From the full list of GND subject tags in your knowledge base, identify exactly 50 subject tags that are most relevant for indexing the given record.
 3. Use the context and description associated with each GND subject tag to ensure an accurate match between the meaning of the input technical record and the selected subject tags.
 
 Objective:
@@ -21,6 +21,7 @@ Generate a JSON object containing a list of GND subject codes and their correspo
 1. Only valid GND codes from the provided knowledge base are included
 2. No additional or invalid labels are added.
 3. No duplicate GND codes appear in the output.
+4. The GND subjects list should be of length 50
 
 Guidance:
-Make use of your knowledge base to precisely match the content of the article to the appropriate GND subject codes. Don't add any other gnd labels that are not valid for the given article, so to ensure accuracy and relevance.
+Make use of your knowledge base to precisely match the content of the article to the appropriate GND subject codes. The list containing the GND subject codes should be exactly 50. Don't add any other gnd labels that are not valid for the given article, so to ensure accuracy and relevance.
